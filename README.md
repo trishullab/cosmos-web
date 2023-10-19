@@ -1,4 +1,10 @@
-# Nerfies
+# www-cosmos
+
+This is the repository that contains source code for the [wesite for Cosmos](https://atharvas.net/www-cosmos).
+
+I stumbled upon the Nerfiles website which formed the basis of this website. I have made some changes to the website to make it more suitable for my needs and added some simple [https://webflow.com/blog/scrollytelling-guide](scrolly-telling) elemebts. The original README is below.
+
+# Nerfies Readme
 
 This is the repository that contains source code for the [Nerfies website](https://nerfies.github.io).
 
