@@ -236,15 +236,10 @@
 						</p>
 						<p>
 							<strong>Some Observations:</strong> 
-							<!-- 1. To perform well in this task, the internal representation
-							of the model must be able to distinguish between the different atoms.
-							2. While the atoms have changed, the rules by wich the atoms interact have not. So, while the
-							task of percieving a new composition atoms is challenging, the task of predicting the next state is
-							relatively easy.  -->
 							<ol>
 								<li>To perform well in this task, the internal representation of the model must be able to distinguish between the different atoms.</li>
-								<li>While the atoms have changed, the rules by wich the atoms interact have not. So, while the
-							task of percieving a new composition atoms is challenging, the task of predicting the next state is
+								<li>While the atoms have changed, the rules by which the atoms interact have not. So, while the
+							task of perceiving a new composition atoms is challenging, the task of predicting the next state is
 							relatively easy.</li>
 							</ol>
 						</p>
@@ -269,7 +264,7 @@
 						</p>
 					</div>
 					<br />
-					<h3 class="title is-4">Object Composition: Subtyples</h3>
+					<h3 class="title is-4">Object Composition: Subtypes</h3>
 					<div class="content has-text-left step">
 						<p>
 							There are many ways in which attributes can be composed. In this work, we study two cases.
@@ -290,7 +285,7 @@
 					<h3 class="title is-4">Object Composition: Sticky Composition</h3>
 					<div class="content has-text-left step">
 						<p>
-							Consequtively, the action on the square moves both the square and the circle northwards.
+							Consecutively, the action on the square moves both the square and the circle northwards.
 						</p>
 					</div>
 					<br />
@@ -305,7 +300,7 @@
 					<div class="content has-text-left step">
 						<p>
 							This time, the action on the square also moves the circle northwards. However, the 
-							circle and the sqaure are considerably far apart.
+							circle and the square are considerably far apart.
 						</p>
 					</div>
 				</div>
@@ -350,8 +345,8 @@
 					<h3 class="title is-4">Symbolic Labelling: Preprocessing</h3>
 					<div class="content has-text-left step">
 						<p>
-							Each vector is decoded to an image using a spatial decoder. The spatial decoder is trained in conjuction with the entity encoder.
-							In practise, we warm-start the encoder and decoder to ensure good auto-encoder reconstructions.
+							Each vector is decoded to an image using a spatial decoder. The spatial decoder is trained in conjunction with the entity encoder.
+							In practice, we warm-start the encoder and decoder to ensure good auto-encoder reconstructions.
 						</p>
 					</div>
 					<br />
@@ -377,7 +372,7 @@
 					<h3 class="title is-4">Symbolic Labelling: Label Relaxation</h3>
 					<div class="content has-text-left step">
 						<p>
-							Each label is represented as a one-hot vector. In practise, this discrete representation does not
+							Each label is represented as a one-hot vector. In practice, this discrete representation does not
 							align well with downstream attention based modules. Hence, the one-hot vector is used to select a
 							learnable vector from a set of learnable vectors.
 						</p>
