@@ -1,8 +1,8 @@
 # www-cosmos
 
-This is the repository that contains source code for the [wesite for Cosmos](https://atharvas.net/www-cosmos).
+This is the repository that contains source code for the [website for Cosmos](https://atharvas.net/www-cosmos).
 
-I stumbled upon the Nerfiles website which formed the basis of this website. I have made some changes to the website to make it more suitable for my needs and added some simple [scrolly-telling](https://webflow.com/blog/scrollytelling-guide) elements. The original README is below.
+I stumbled upon the Nerfiles website which formed the basis of this website. I have made some changes to the website to make it more suitable for my needs and added some simple [scrolly-telling](https://www.jwilber.me/permutationtest/) elements. The original README is below.
 
 # Nerfies Readme
 
