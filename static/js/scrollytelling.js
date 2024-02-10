@@ -61,7 +61,3 @@ function init(selector) {
         })
         .onStepEnter(handleStepEnter);
 }
-
-// kick things off
-init("#types-of-compositions-scroll");
-init("#onepass-inference-scroll");
