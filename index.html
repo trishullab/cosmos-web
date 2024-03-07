@@ -402,24 +402,51 @@
 						</p>
 					</div>
 					<br />
-					<h3 class="title is-size-6-mobile is-size-4-tablet">Symbolic Embedding</h3>
+					<h3 class="title is-size-6-mobile is-size-4-tablet">Symbolic Encoding</h3>
 					<div class="content is-size-7-mobile is-size-6-tablet has-text-left step">
 						<p>
 							The symbolic labelling process is repeated for each entity in the scene. The resultant symbolic
-							vectors are stacked to form a <em>symbolic embedding</em> of the scene.
+							vectors are stacked to form a <em>symbolic encoding</em> of the scene.
+						</p>
+					</div>
+					<br />
+					<h3 class="title is-size-6-mobile is-size-4-tablet">Strawman #1</h3>
+					<div class="content is-size-7-mobile is-size-6-tablet has-text-left step">
+						<p>
+							Following <a href="https://arxiv.org/abs/2103.01937">NPS</a>, we will break down the transition function into two parts: Learning to select a module and learning to specialize the module to a task. However, how should we employ the neural and symbolic encodings?
+						</p>
+						<p>
+							The <strong style="color: #fb8c00;">symbolic encoding</strong> will help the selection module be robust to attribute compositions. However, if we just use the symbolic encoding, we will risk bottlenecking the model's ability to learn fine-grained dynamics-relevant attributes that may not be known ahead of time.
+						</p>
+					</div>
+					<br />
+					<h3 class="title is-size-6-mobile is-size-4-tablet">Strawman #2</h3>
+					<div class="content is-size-7-mobile is-size-6-tablet has-text-left step">
+						<p>
+							The <strong style="color: #417be4;">neural encoding</strong>, on the other hand, captures rich dynamics-relevant attributes which will enable good reconstruction. However, we will risk overfitting to attribute compositions seen during training.
+						</p>
+					</div>
+					<br />
+					<h3 class="title is-size-6-mobile is-size-4-tablet">Motivating a Neurosymbolic Encoding</h3>
+					<div class="content is-size-7-mobile is-size-6-tablet has-text-left step">
+						<p>
+							We solve this problem by employing a hybrid approach. We'll use the symbolic encoding to select a module and the neural encoding to predict the next state.
+						</p>
+						<p>
+							We'll now describe the rest of the architecture.
 						</p>
 					</div>
 					<br />
 					<h3 class="title is-size-6-mobile is-size-4-tablet">Module Selection</h3>
 					<div class="content is-size-7-mobile is-size-6-tablet has-text-left step">
 						<p>
-							The symbolic embedding is concatenated with the action vector after the embedding and action are
+							The symbolic encoding is concatenated with the action vector after the encoding and action are
 							reordered to match the canonical ordering of the symbols. The concatenated vector is select a
 							learnable module which is used to predict the next state. 
 						</p>
 						<p>
-							Note that the symbolic embedding is
-							only selecting the module, which leaves room for the neural embedding to learn fine-grained
+							Note that the symbolic encoding is
+							only selecting the module, which leaves room for the neural encoding to learn fine-grained
 							dynamics-relevant attributes that may not be known ahead of time.
 						</p>
 					</div>
@@ -427,7 +454,7 @@
 					<h3 class="title is-size-6-mobile is-size-4-tablet">Module Application</h3>
 					<div class="content is-size-7-mobile is-size-6-tablet has-text-left step">
 						<p>
-							The selected module is applied to the neural embedding to predict the next state.
+							The selected module is applied to the neural encoding to predict the next state.
 						</p>
 					</div>
 					<br />
